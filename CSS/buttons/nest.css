@@ -15,7 +15,12 @@
     background-color: var(--shadow);
     padding: 0.3em;
     user-select: none;
-    transition: background-color var(--speed) ease, color 0.07s ease;
+    transition: background-color var(--speed) ease, color 0.07s ease, filter 0.2s ease, opacity 0.2s ease;
+}
+.daxcr-button-nest.daxcr-disabled{
+    pointer-events: none;
+    opacity: 0.65;
+    filter: contrast(0.6);
 }
 
 .daxcr-button-nest::before {
@@ -49,8 +54,8 @@
 .daxcr-button-nest.daxcr-REGULAR {
     --bg: #ffc267 !important;
     --hover: #ffffff !important;
-    --shadow: #af3d3421 !important;
-    --color: #6e481c !important;
+    --shadow: #af5b3421 !important;
+    --color: #6e541c !important;
     font-family: "daxcr-button-nest" !important;
 }
 .daxcr-button-nest.daxcr-CONFIRM {

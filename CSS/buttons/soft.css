@@ -21,6 +21,10 @@
     transition: transform 0.2s ease, filter 0.2s ease, background-color 0.2s ease;
     filter: drop-shadow(0 0 0 var(--bgShadow));
 }
+.daxcr-button-soft.daxcr-disabled{
+    pointer-events: none;
+    filter: contrast(0.7) brightness(0.7);
+}
 .daxcr-button-soft:hover {
     transform: translateY(-0.3em);
     filter: drop-shadow(0 0.3em 0 var(--bgShadow));
