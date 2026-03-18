@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="nest.css"/>
     <link rel="stylesheet" href="soft.css"/>
+    <link rel="stylesheet" href="skewed.css"/>
 </head>
 <style>
     body {
@@ -72,7 +73,7 @@
 
     <p>Stylesheet:</p>
     <div class="code">
-<pre><code>&lt;link rel="stylesheet" href="https://weblib.daxcr.net/CSS/buttons/nest.css"/&gt;
+<pre><code>&lt;link rel="stylesheet" href="https://libweb.daxcr.net/CSS/buttons/nest.css"/&gt;
 </code></pre>
     </div>
 
@@ -114,7 +115,53 @@
 
     <p>Stylesheet:</p>
     <div class="code">
-<pre><code>&lt;link rel="stylesheet" href="https://weblib.daxcr.net/CSS/buttons/soft.css"/&gt;
+<pre><code>&lt;link rel="stylesheet" href="https://libweb.daxcr.net/CSS/buttons/soft.css"/&gt;
+</code></pre>
+    </div>
+
+    <br><br><hr><br><br>
+    
+    <h3>Button name: <span class="box">Skewed</span></h3>
+    <p>Class name: <span class="box">daxcr-button-skewed</span></p><br>
+
+    <span class="daxcr-button-skewed">Skewed</span> No theme.<br><br><br>
+    <span class="daxcr-button-skewed daxcr-REGULAR">Skewed - Regular</span> Theme name: <span class="box">daxcr-REGULAR</span><br><br>
+    <span class="daxcr-button-skewed daxcr-CONFIRM">Skewed - Confirm</span> Theme name: <span class="box">daxcr-CONFIRM</span><br><br>
+    <span class="daxcr-button-skewed daxcr-CANCEL">Skewed - Cancel</span> Theme name: <span class="box">daxcr-CANCEL</span><br><br>
+    <span class="daxcr-button-skewed daxcr-CONTINUE">Skewed - Continue</span> Theme name: <span class="box">daxcr-CONTINUE</span><br><br>
+    <span class="daxcr-button-skewed daxcr-ERROR">Skewed - Error</span> Theme name: <span class="box">daxcr-ERROR</span><br><br>
+
+    <p>Custom theme template:</p>
+    <div class="code">
+<pre><code>.daxcr-button-soft.[YOUR_THEME_NAME] {
+    --bg: #a8a8a8     !important;
+    --bgHover: #b8b8b8     !important;
+    --bgActive: #ffffff     !important;
+    --skew: -24deg     !important;
+    --color: #000000     !important;
+    --colorHover: #121212     !important;
+    --colorActive: #4a4a4a     !important;
+    --scaleHover: 1.1     !important;
+    --scaleActive: 1.2     !important;
+}
+</code></pre>
+    </div>
+
+    <p>Implementation:</p>
+    <div class="code">
+<pre><code>&lt;span class="daxcr-button-skewed [THEME_NAME]"&gt;Hello, World!&lt;/span&gt;
+</code></pre>
+    </div>
+
+    <p>Example:</p>
+    <div class="code">
+<pre><code>&lt;span class="daxcr-button-skewed <span style="color: #2ba820">daxcr-REGULAR</span>"&gt;Hello, World!&lt;/span&gt;
+</code></pre>
+    </div>
+
+    <p>Stylesheet:</p>
+    <div class="code">
+<pre><code>&lt;link rel="stylesheet" href="https://libweb.daxcr.net/CSS/buttons/skewed.css"/&gt;
 </code></pre>
     </div>
 </body>

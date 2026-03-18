@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "daxcr-button-skewed";
+    src: url("TurretRoad-Bold.ttf") format("truetype");
+}
+.daxcr-button-skewed {
+    display: inline-block;
+    --bg: #a8a8a8;
+    --bgHover: #b8b8b8;
+    --bgActive: #ffffff;
+    --skew: -24deg;
+    --color: #000000;
+    --colorHover: #121212;
+    --colorActive: #4a4a4a;
+    --scaleHover: 1.1;
+    --scaleActive: 1.2;
+    color: var(--color);
+    padding: 0.6em;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    user-select: none;
+    font-family: "daxcr-button-skewed";
+    position: relative;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.daxcr-button-skewed::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bg);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    transform: skew(var(--skew));
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    filter: drop-shadow(0 0 10px #0000001a);
+}
+.daxcr-button-skewed:hover {
+    transform: scale(var(--scaleHover));
+    color: var(--colorHover);
+}
+.daxcr-button-skewed:active {
+    transition: transform 0.06s ease;
+    transform: scale(var(--scaleActive));
+    color: var(--colorActive);
+}
+.daxcr-button-skewed:hover::before {
+    background-color: var(--bgHover);
+    transform: skew(var(--skew)) scale(var(--scaleHover));
+}
+
+.daxcr-button-skewed:active::before {
+    background-color: var(--bgActive);
+    transform: skew(var(--skew)) scale(var(--scaleActive));
+}
+.daxcr-button-skewed.daxcr-REGULAR {
+    --bg: #e9cb67 !important;
+    --bgHover: #f3de9a !important;
+    --bgActive: #ffc400 !important;
+    --color: #683e08 !important;
+    --colorHover: #000000 !important;
+    --colorActive: #ffffff !important;
+}
+.daxcr-button-skewed.daxcr-CONFIRM {
+    --bg: #68d635 !important;
+    --bgHover: #94da54 !important;
+    --bgActive: #2f8b1d !important;
+    --color: #08551b !important;
+    --colorHover: #000000 !important;
+    --colorActive: #ffffff !important;
+}
+.daxcr-button-skewed.daxcr-CANCEL {
+    --bg: #e06b6b !important;
+    --bgHover: #ff9a9a !important;
+    --bgActive: #b41111 !important;
+    --color: #500924 !important;
+    --colorHover: #000000 !important;
+    --colorActive: #ffffff !important;
+}
+.daxcr-button-skewed.daxcr-CONTINUE {
+    --bg: #4ebbee !important;
+    --bgHover: #9adce7 !important;
+    --bgActive: #0c3ca5 !important;
+    --color: #240950 !important;
+    --colorHover: #000000 !important;
+    --colorActive: #ffffff !important;
+}
+.daxcr-button-skewed.daxcr-ERROR {
+    --bg: #ff3c3c !important;
+    --bgHover: #e22323 !important;
+    --bgActive: #000000 !important;
+    --color: #500924 !important;
+    --colorHover: #ffffff !important;
+    --colorActive: #ff0000 !important;
+}
