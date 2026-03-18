@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "daxcr-button-nest";
+    src: url("Lexend-VariableFont_wght.ttf") format("truetype");
+}
+
+.daxcr-button-nest {
+    --bg: #7e7e7e;
+    --shadow: #00000021;
+    --hover: #ffffff;
+    --speed: 0.2s;
+    --color: #313131;
+    font-family: "daxcr-button-nest";
+    color: var(--color);
+    position: relative;
+    background-color: var(--shadow);
+    padding: 0.3em;
+    user-select: none;
+    transition: background-color var(--speed) ease, color 0.07s ease;
+}
+
+.daxcr-button-nest::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bg);
+    width: 0%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    transition: background-color 0.1s cubic-bezier(0.19, 1, 0.22, 1), width var(--speed) cubic-bezier(0.19, 1, 0.22, 1);
+}
+.daxcr-button-nest:hover {
+    background-color: #00000000;
+    color: var(--hover) !important;
+}
+.daxcr-button-nest:hover::before {
+    width: 100%;
+}
+.daxcr-button-nest:active {
+    color: #000000 !important;
+    background-color: #00000000;
+}
+.daxcr-button-nest:active::before {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.daxcr-button-nest.daxcr-REGULAR {
+    --bg: #ffc267 !important;
+    --hover: #ffffff !important;
+    --shadow: #af3d3421 !important;
+    --color: #6e481c !important;
+    font-family: "daxcr-button-nest" !important;
+}
+.daxcr-button-nest.daxcr-CONFIRM {
+    --bg: #6be475 !important;
+    --hover: #ffffff !important;
+    --shadow: #28a16f21 !important;
+    --color: #1c6e4c !important;
+    font-family: "daxcr-button-nest" !important;
+}
+.daxcr-button-nest.daxcr-CANCEL {
+    --bg: #e46b6b !important;
+    --hover: #742626 !important;
+    --shadow: #a1289721 !important;
+    --color: #631029 !important;
+    font-family: "daxcr-button-nest" !important;
+}
+.daxcr-button-nest.daxcr-CONTINUE {
+    --bg: #6bb8e4 !important;
+    --hover: #ffffff !important;
+    --shadow: #3428a121 !important;
+    --color: #2b3da3 !important;
+    font-family: "daxcr-button-nest" !important;
+}
+.daxcr-button-nest.daxcr-ERROR {
+    --bg: #ff0000 !important;
+    --hover: #000000 !important;
+    --shadow: #e600008e !important;
+    --color: #ffffff !important;
+    font-family: "daxcr-button-nest" !important;
+}

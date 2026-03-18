@@ -1,1 +1,112 @@
-Hello, World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="nest.css"/>
+    <link rel="stylesheet" href="soft.css"/>
+</head>
+<style>
+    body {
+        background-color: #e6e6e6;
+        font-family: "Courier New", Courier, monospace;
+    }
+    code {
+        font-size: 20px !important;
+        padding: 10px;
+    }
+    #daxcr-internal-button { 
+        font-size: 30px;
+        margin: 12%;
+        margin-top: 5%;
+    }
+    .box {
+        padding: 5px;
+        background-color: #d8d8d8;
+        border-radius: 5px;
+        outline: 3px #cacaca solid;
+    }
+    .code {
+        background-color: #d8d8d8;
+        border-radius: 5px;
+        outline: 3px #cacaca solid;
+    }
+</style>
+<body id="daxcr-internal-button">
+    <h1>Buttons</h1>
+    <h2>Try clicking a button!</h2><br>
+    <p>Button name: <span class="box">Nest</span><p>
+    <p>Class name: <span class="box">daxcr-button-nest</span><p><br>
+
+    <span class="daxcr-button-nest">Nest</span> No theme.<br><br><br>
+    <span class="daxcr-button-nest daxcr-REGULAR">Nest - Regular</span> Theme name: <span class="box">daxcr-REGULAR</span><br><br>
+    <span class="daxcr-button-nest daxcr-CONFIRM">Nest - Confirm</span> Theme name: <span class="box">daxcr-CONFIRM</span><br><br>
+    <span class="daxcr-button-nest daxcr-CANCEL">Nest - Cancel</span> Theme name: <span class="box">daxcr-CANCEL</span><br><br>
+    <span class="daxcr-button-nest daxcr-CONTINUE">Nest - Continue</span> Theme name: <span class="box">daxcr-CONTINUE</span><br><br>
+    <span class="daxcr-button-nest daxcr-ERROR">Nest - Error</span> Theme name: <span class="box">daxcr-ERROR</span><br><br>
+    
+    <p>Custom theme template:</p>
+    <div class="code">
+<pre><code>.daxcr-button-nest.[YOUR_THEME_NAME] {
+    --bg: #7e7e7e     !important;
+    --shadow: #00000021     !important;
+    --hover: #ffffff     !important;
+    --speed: 0.2s     !important;
+    --color: #313131     !important;
+}
+</code></pre>
+    </div>
+    
+    <p>Implementation:</p>
+    <div class="code">
+<pre><code>&lt;span class="daxcr-button-nest [THEME_NAME]"&gt;Hello, World!&lt;/span&gt;
+</code></pre>
+    </div>
+
+    <p>Example:</p>
+    <div class="code">
+<pre><code>&lt;span class="daxcr-button-nest daxcr-REGULAR"&gt;Hello, World!&lt;/span&gt;
+</code></pre>
+    </div>
+
+    <p>Stylesheet:</p>
+    <div class="code">
+<pre><code>&lt;link rel="stylesheet" href="https://weblib.daxcr.net/CSS/buttons/nest.css"/&gt;
+</code></pre>
+    </div>
+
+    <br><br><hr><br><br>
+    
+    <p>Button name: <span class="box">Soft</span><p>
+    <p>Class name: <span class="box">daxcr-button-soft</span><p><br>
+
+    <span class="daxcr-button-soft">Soft</span> No theme.<br><br><br>
+    <span class="daxcr-button-soft daxcr-REGULAR">Soft - Regular</span> Theme name: <span class="box">daxcr-REGULAR</span><br><br>
+    <span class="daxcr-button-soft daxcr-CONFIRM">Soft - Confirm</span> Theme name: <span class="box">daxcr-CONFIRM</span><br><br>
+    <span class="daxcr-button-soft daxcr-CANCEL">Soft - Cancel</span> Theme name: <span class="box">daxcr-CANCEL</span><br><br>
+    <span class="daxcr-button-soft daxcr-CONTINUE">Soft - Continue</span> Theme name: <span class="box">daxcr-CONTINUE</span><br><br>
+    <span class="daxcr-button-soft daxcr-ERROR">Soft - Error</span> Theme name: <span class="box">daxcr-ERROR</span><br><br>
+
+    <p>Custom theme template:</p>
+    <div class="code">
+<pre><code>.daxcr-button-soft.[YOUR_THEME_NAME] {
+    --bg: #bebebe     !important;
+    --outline: #c0c0c0     !important;
+    --bgShadow: #adadad     !important;
+    --bgActive: #999999     !important;
+    --color: #050505     !important;
+}
+</code></pre>
+    </div>
+
+    <p>Implementation:</p>
+    <div class="code">
+<pre><code>&lt;span class="daxcr-button-soft [YOUR_THEME_NAME]"&gt;Hello, World!&lt;/span&gt;
+</code></pre>
+    </div>
+
+    <p>Stylesheet:</p>
+    <div class="code">
+<pre><code>&lt;link rel="stylesheet" href="https://weblib.daxcr.net/CSS/buttons/soft.css"/&gt;
+</code></pre>
+    </div>
+</body>
+</html>

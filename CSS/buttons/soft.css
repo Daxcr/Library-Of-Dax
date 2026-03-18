@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "daxcr-button-soft";
+    src: url("Lexend-VariableFont_wght.ttf") format("truetype");
+}
+
+.daxcr-button-soft {
+    --bg: #bebebe;
+    --outline: #c0c0c0;
+    --bgShadow: #adadad;
+    --bgActive: #999999;
+    --color: #050505;
+    color: var(--color);
+    padding: 0.65em;
+    background-color: var(--bg);
+    border-radius: 0.3em;
+    outline: 0.1em solid var(--outline);
+    font-family: "daxcr-button-soft";
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.2s ease, filter 0.2s ease, background-color 0.2s ease;
+    filter: drop-shadow(0 0 0 var(--bgShadow));
+}
+.daxcr-button-soft:hover {
+    transform: translateY(-0.3em);
+    filter: drop-shadow(0 0.3em 0 var(--bgShadow));
+}
+.daxcr-button-soft:active {
+    background-color: var(--bgActive);
+    transform: translateY(0);
+    filter: drop-shadow(0 0 0 var(--bgShadow));
+}
+
+.daxcr-button-soft.daxcr-REGULAR {
+    --bg: #fcd875 !important;
+    --outline: #fdb960 !important;
+    --bgShadow: #fdb960 !important;
+    --bgActive: #ffffff !important;
+    --color: #8b3c17 !important;
+}
+.daxcr-button-soft.daxcr-CONFIRM {
+    --bg: #43da3d !important;
+    --outline: #29b94d !important;
+    --bgShadow: #29b94d !important;
+    --bgActive: #ffffff !important;
+    --color: #154644 !important;
+}
+.daxcr-button-soft.daxcr-CANCEL {
+    --bg: #da3d3d !important;
+    --outline: #b92948 !important;
+    --bgShadow: #b92948 !important;
+    --bgActive: #ff8282 !important;
+    --color: #ffffff !important;
+}
+.daxcr-button-soft.daxcr-CONTINUE {
+    --bg: #75a7f1 !important;
+    --outline: #486bca !important;
+    --bgShadow: #486bca !important;
+    --bgActive: #e6f3ff !important;
+    --color: #290b35 !important;
+}
+.daxcr-button-soft.daxcr-ERROR {
+    --bg: #47080d !important;
+    --outline: #2b0012 !important;
+    --bgShadow: #2b0012 !important;
+    --bgActive: #ff0000 !important;
+    --color: #f57979 !important;
+}
