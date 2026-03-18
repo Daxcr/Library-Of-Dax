@@ -41,7 +41,7 @@
     transition: background-color 0.2s ease, transform 0.2s ease;
     filter: drop-shadow(0 0 10px #0000001a);
 }
-.daxcr-button-skewed:hover {
+.daxcr-button-skewed:hover, .daxcr-button-skewed.toggled {
     transform: scale(var(--scaleHover));
     color: var(--colorHover);
 }
@@ -50,7 +50,7 @@
     transform: scale(var(--scaleActive));
     color: var(--colorActive);
 }
-.daxcr-button-skewed:hover::before {
+.daxcr-button-skewed:hover::before, .daxcr-button-skewed.toggled::before {
     background-color: var(--bgHover);
     transform: skew(var(--skew)) scale(var(--scaleHover));
 }

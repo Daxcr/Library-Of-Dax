@@ -6,9 +6,13 @@
     <link rel="stylesheet" href="skewed.css"/>
 </head>
 <style>
+    @font-face {
+        font-family: "Quicksand";
+        src: url("Quicksand-VariableFont_wght.ttf") format("truetype");
+}
     body {
         background-color: #e6e6e6;
-        font-family: "Courier New", Courier, monospace;
+        font-family: "Quicksand";
     }
     code {
         font-size: 15px !important;
@@ -35,8 +39,15 @@
     <h1>Buttons</h1>
     <h2>Try clicking a button!</h2><br>
     <h3>Preamble</h3>
-    You may use these in any website you like; they all fall under the MIT license.<br>
-    If you want to disable a button, you can apply the class <span class="box">daxcr-disabled</span> to your buttons through Javascript.
+    You may use these in any website you like; they all fall under the MIT license.<br><br>
+    If you want to disable a button, you can apply the class <span class="box">daxcr-disabled</span> to your buttons through Javascript.<br><br>
+    If you want it to toggle when pressed, make sure to put this script at the bottom of your webpage. You can apply the class <span class="box">daxcr-toggle</span> to enable toggling.
+    <div class="code">
+<pre><code>&lt;link rel="stylesheet" href="https://libweb.daxcr.net/CSS/buttons/toggle.js"/&gt;
+</code></pre>
+    </div><br>
+    
+
     <h3>Button name: <span class="box">Nest</span></h3>
     <p>Class name: <span class="box">daxcr-button-nest</span></p><br>
 
@@ -165,4 +176,5 @@
 </code></pre>
     </div>
 </body>
+<script src="toggle.js"></script>
 </html>

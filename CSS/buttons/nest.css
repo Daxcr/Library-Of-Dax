@@ -35,11 +35,11 @@
     left: 0;
     transition: background-color 0.1s cubic-bezier(0.19, 1, 0.22, 1), width var(--speed) cubic-bezier(0.19, 1, 0.22, 1);
 }
-.daxcr-button-nest:hover {
+.daxcr-button-nest:hover, .daxcr-button-nest.toggled {
     background-color: #00000000;
     color: var(--hover) !important;
 }
-.daxcr-button-nest:hover::before {
+.daxcr-button-nest:hover::before, .daxcr-button-nest.toggled::before {
     width: 100%;
 }
 .daxcr-button-nest:active {
