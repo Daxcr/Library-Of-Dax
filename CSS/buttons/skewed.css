@@ -22,6 +22,11 @@
     position: relative;
     transition: transform 0.2s ease, color 0.2s ease;
 }
+.daxcr-button-skewed.daxcr-disabled{
+    pointer-events: none;
+    opacity: 0.4;
+    filter: brightnes(0.2);
+}
 .daxcr-button-skewed::before{
     content: "";
     position: absolute;
